@@ -1,0 +1,87 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+body {
+    display: flex;
+    background-color: #f3f1f1;
+    overflow-y: hidden;
+    
+}
+
+.flex-page {
+    display: flex;
+    height: 100vh;
+}
+
+
+main header {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 1em;
+    display: block;
+    padding-bottom: 0.8em;
+}
+
+a, p, li, code{
+    font-size: 1.2em;
+}
+
+p {
+    margin-left: 1em;
+    display: block;
+}
+
+li {
+    margin-left: 2em;
+}
+
+code {
+    display: block;
+    background-color: #e0e0e0;
+    font-family:monospace;
+    padding: 1em 1em;
+    margin: 1em 0 1em 4em;
+    line-break: normal;
+    line-height: 2;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-right: 2px inset #e0e0e0;
+
+}
+
+nav header {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+nav > a {
+    text-decoration: none;
+    display: block;
+    padding: 1em 0;
+    border-top: 2px inset #e0e0e0;
+
+}
+
+main {
+    padding: 0 2em 2em 2em;
+    overflow: scroll;
+}
+
+@media (max-width: 600px) {
+    .flex-page {
+        flex-direction: column;
+}
